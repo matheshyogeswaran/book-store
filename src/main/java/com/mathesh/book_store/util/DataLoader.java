@@ -29,9 +29,9 @@ public class DataLoader implements CommandLineRunner {
             admin.setPassword(encoder.encode("admin123"));
             admin.setRoles(Set.of(Role.ROLE_ADMIN));
             repo.save(admin);
-            System.out.println("✅ Admin user created: admin/admin123");
+            System.out.println(" Admin user created: admin/admin123");
         } else {
-            System.out.println("ℹ️ Admin user already exists");
+            System.out.println(" Admin user already exists");
         }
 
         // Create normal USER if not exists
@@ -41,9 +41,9 @@ public class DataLoader implements CommandLineRunner {
             user.setPassword(encoder.encode("user123"));
             user.setRoles(Set.of(Role.ROLE_USER));
             repo.save(user);
-            System.out.println("✅ Normal user created: user/user123");
+            System.out.println(" Normal user created: user/user123");
         } else {
-            System.out.println("ℹ️ Normal user already exists");
+            System.out.println(" Normal user already exists");
         }
     }
 }

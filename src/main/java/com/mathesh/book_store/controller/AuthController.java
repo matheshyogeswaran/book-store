@@ -32,5 +32,6 @@ public class AuthController {
         String token = jwtUtils.generateJwtToken(userDetails.getUsername());
 
         return new AuthResponse(token);
+
     }
 }

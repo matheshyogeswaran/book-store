@@ -86,6 +86,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>book-store</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
